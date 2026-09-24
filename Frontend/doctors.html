@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctors | MediConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>✚</span> MediConnect
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html" class="active">Doctors</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="primary-btn">Register</a>
+    </div>
+
+</header>
+
+
+<section class="page-header">
+
+    <span>MEDICAL SPECIALISTS</span>
+
+    <h1>Find the Right Doctor</h1>
+
+    <p>
+        Search qualified doctors and check their availability.
+    </p>
+
+</section>
+
+
+<section class="doctor-section">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="doctorSearch"
+            placeholder="Search doctor or specialization..."
+        >
+
+        <select id="departmentFilter">
+
+            <option value="all">All Departments</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="dentistry">Dentistry</option>
+
+        </select>
+
+    </div>
+
+
+    <div class="doctor-grid" id="doctorGrid">
+
+        <div class="doctor-card"
+             data-name="rahul kumar"
+             data-department="cardiology">
+
+            <div class="doctor-photo">👨‍⚕️</div>
+
+            <div class="available">Available</div>
+
+            <h3>Dr. Rahul Kumar</h3>
+
+            <p class="speciality">Cardiologist</p>
+
+            <div class="rating">★★★★★ <span>4.9</span></div>
+
+            <p>10+ years experience</p>
+
+            <a href="appointment.html" class="primary-btn">
+                Book Appointment
+            </a>
+
+        </div>
+
+
+        <div class="doctor-card"
+             data-name="priya sharma"
+             data-department="neurology">
+
+            <div class="doctor-photo">👩‍⚕️</div>
+
+            <div class="available">Available</div>
+
+            <h3>Dr. Priya Sharma</h3>
+
+            <p class="speciality">Neurologist</p>
+
+            <div class="rating">★★★★★ <span>4.8</span></div>
+
+            <p>8+ years experience</p>
+
+            <a href="appointment.html" class="primary-btn">
+                Book Appointment
+            </a>
+
+        </div>
+
+
+        <div class="doctor-card"
+             data-name="arjun reddy"
+             data-department="orthopedics">
+
+            <div class="doctor-photo">👨‍⚕️</div>
+
+            <div class="available">Available</div>
+
+            <h3>Dr. Arjun Reddy</h3>
+
+            <p class="speciality">Orthopedic Surgeon</p>
+
+            <div class="rating">★★★★★ <span>4.9</span></div>
+
+            <p>12+ years experience</p>
+
+            <a href="appointment.html" class="primary-btn">
+                Book Appointment
+            </a>
+
+        </div>
+
+
+        <div class="doctor-card"
+             data-name="sneha rao"
+             data-department="pediatrics">
+
+            <div class="doctor-photo">👩‍⚕️</div>
+
+            <div class="available">Available</div>
+
+            <h3>Dr. Sneha Rao</h3>
+
+            <p class="speciality">Pediatrician</p>
+
+            <div class="rating">★★★★★ <span>4.7</span></div>
+
+            <p>7+ years experience</p>
+
+            <a href="appointment.html" class="primary-btn">
+                Book Appointment
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">✚ MediConnect</div>
+
+    <p>Hospital Management & Appointment Booking System</p>
+
+    <div class="copyright">
+        © 2026 MediConnect. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

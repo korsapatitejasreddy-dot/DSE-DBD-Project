@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | MediConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>✚</span> MediConnect
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointment.html" class="active">Appointments</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+
+</header>
+
+
+<section class="appointment-page">
+
+    <div class="appointment-container">
+
+        <div class="appointment-info">
+
+            <span>MEDICAL APPOINTMENT</span>
+
+            <h1>
+                Book Your<br>
+                <strong>Appointment</strong>
+            </h1>
+
+            <p>
+                Choose your preferred doctor, date and time.
+                Our system makes appointment booking quick
+                and convenient.
+            </p>
+
+            <div class="appointment-benefits">
+
+                <div>
+                    ✓ Qualified Doctors
+                </div>
+
+                <div>
+                    ✓ Flexible Schedule
+                </div>
+
+                <div>
+                    ✓ Secure Information
+                </div>
+
+                <div>
+                    ✓ Easy Management
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="appointment-form" id="appointmentForm">
+
+            <h2>Appointment Details</h2>
+
+            <label>Patient Name</label>
+
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="appointmentEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label>Department</label>
+
+            <select id="department" required>
+
+                <option value="">Select Department</option>
+
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+                <option>Dentistry</option>
+                <option>General Medicine</option>
+
+            </select>
+
+
+            <label>Doctor</label>
+
+            <select id="doctor" required>
+
+                <option value="">Select Doctor</option>
+
+                <option>Dr. Rahul Kumar</option>
+                <option>Dr. Priya Sharma</option>
+                <option>Dr. Arjun Reddy</option>
+                <option>Dr. Sneha Rao</option>
+
+            </select>
+
+
+            <div class="form-row">
+
+                <div>
+                    <label>Date</label>
+
+                    <input
+                        type="date"
+                        id="appointmentDate"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label>Time</label>
+
+                    <select id="appointmentTime" required>
+
+                        <option value="">Select Time</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <label>Reason for Visit</label>
+
+            <textarea
+                id="reason"
+                placeholder="Briefly describe your problem..."
+            ></textarea>
+
+
+            <button type="submit" class="primary-btn full">
+                Confirm Appointment →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
